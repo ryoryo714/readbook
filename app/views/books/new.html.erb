@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+    <h3>本を追加する</h3>
+    <%= form_with(model: @book, local: true) do |form| %>
+      <%= form.text_field :title, placeholder: "本のタイトル" %>
+      <%= form.text_field :image, placeholder: "Image Url" %>
+      <%= form.text_area :read_book, placeholder: "どこまで読んだか", rows: "10" %>
+      <%= form.submit "追加" %>
+    <% end %>
+  </div>
+</div>

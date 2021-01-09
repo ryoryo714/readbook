@@ -3,7 +3,6 @@ class Book < ApplicationRecord
     validates :title
     validates :read_book
     validates :image
-    belongs_to :user
   end
-  
+  belongs_to :user
 end
